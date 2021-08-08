@@ -1,0 +1,234 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block title %}Base de Datos{% endblock title %}
+
+{% block content %}
+<!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container" data-aos="fade-up">
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main" class="p-3">
+
+
+    <!-- ======= Services Section ======= -->
+    <section id="bd" class="bd">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-in" data-aos-delay="100">
+          <h2>Base de Datos</h2>          
+        </div>
+
+        <div class="row">
+            <div class="col-12 text-justify">
+                <h3>Descripción</h3>
+                <p>
+                    El Observatorio Satelital de Nieves dispondrá de dos nuevas bases de datos, implementándose en una prueba de concepto en la cuenca del río Aconcagua 
+                    (32.25 S – 33.25 S). Estas bases de datos se generan a partir de la información de todas las imágenes  satelitales optimizadas disponibles de los 
+                    programas satelitales MODIS, Landsat y Sentinel. La primera base datos (BD1) contendrá un nuevo set diario de nieves con nubes reducidas desde el
+                      año 2000 con una resolución espacial de 500 m. La principal base de información para esta base de  datos son las imágenes satelitales del producto MODIS
+                     (MOD10A1.006 Terra Snow Cover Daily Global, <a href="https://modis.gsfc.nasa.gov/data/" target="_blank">https://modis.gsfc.nasa.gov/data/</a>) y 
+                    contendrá el resultado de la prueba y selección de los distintos 
+                    algoritmos  espaciales y temporales disponibles. La segunda base de datos (BD2), corresponderá a un producto  fusionado con datos provenientes de los 
+                    programas satelitales Landsat y Sentinel utilizando el producto Level-1 top of atmosphere (TOA) 
+                    (<a href="http://reverb.echo.nasa.gov" target="_blank">http://reverb.echo.nasa.gov</a>), Sentinel-1 producto 
+                    Syntetic Aperture Radar (SAR) banda C y  Sentinel-2 producto Level-1C TOA 
+                    (<a href="https://sentinel.esa.int/web/sentinel/sentinel-data-access" target="_blank">https://sentinel.esa.int/web/sentinel/sentinel-data-access</a>) respectivamente. 
+                    La  resolución espacial será de hasta 10 m cada 6 días cuando se disponga de imágenes Sentinel y de 30m  cada 16 días en los periodos que se cuente solo 
+                    con imágenes Landsat. Esta base de datos unificada contendrá datos desde el año 1988 según la disponibilidad de imágenes del programa Landsat para el 
+                    área estudiada. Ambas bases de datos se actualizarán en forma  automática en la medida que se liberen nuevas imágenes desde los programas satelitales. 
+                    A partir de las nuevas bases de datos generadas se extraerán métricas sobre el  comportamiento de los patrones de nieves a distintas escalas temporales 
+                    y espaciales permitiendo el monitoreo de la variabilidad de espacio temporal de la nieve para la cuenca de estudio. Esta  transformación de los datos de 
+                    nieves a información relevante para diversos usuarios es fundamental  para la divulgación de información científica y se transforma en apoyo a los 
+                    tomadores de decisiones.  Se podrá disponer de la evolución histórica de área cubierta por nieve a escala de cuenca, subcuenca  y subsubcuenca según la 
+                    definición de la Dirección General de Aguas.
+                </p>
+
+                <p>
+                    La proyección del producto final esperado como Observatorio satelital de nieves, posterior al presente proyecto IDeA i+d, considera la expansión 
+                    de la zona geográfica del prototipo a realizar proyectándose desde escala de cuenca, a nivel país y de todos los Andes.
+                </p>
+
+                <p>
+                    Con la información del comportamiento del manto de nieve entregada por el observatorio, se reducirá  la incertidumbre de los distintos actores 
+                    y sectores económicos que dependen de este insumo para  desarrollar modelos hidrológicos. Estos modelos son necesarios para predecir la producción 
+                    de agua  en sectores tan relevantes como la agricultura, permitiendo mejorar la gestión hídrica en las  organizaciones de usuarios de agua como 
+                    las Juntas de Vigilancia. A nivel estatal, permitirá zonificar  las áreas que han experimentado disminución o no de la cobertura de nieves y la 
+                    magnitud del  cambio. Esta información es relevante para generar planes de contingencia, mitigación y adaptación  a los cambios de la cobertura 
+                    de nieve en el contexto del cambio climático. A nivel científico, permitirá  ser pioneros en Sudamérica al contar con un observatorio satelital 
+                    de nieves, como los desarrollados  en el hemisferio norte.
+                </p>
+
+                <p>
+                  <div class="row">
+                    <div class="col-6 zoom">
+                      <h3>Subcuencas</h3>
+                      <img src="{% static 'img/cartografia/01 Subcuencas.png' %}" alt="Subcuencas" class="img-fluid ">
+                    </div>
+
+                    <div class="col-6 zoom">
+                      <h3>Microcuencas</h3>
+                      <img src="{% static 'img/cartografia/02 Microcuencas.png' %}" alt="Microcuencas" class="img-fluid ">
+                    </div>
+                  </div>
+                </p>
+
+                <p>
+                  <div class="row">
+                    <div class="col-6 zoom">
+                      <h3>Promedio Histórico NDSI Mensual</h3>
+                      <img src="{% static 'img/cartografia/PROMEDIO HISTORICO NDSI MENSUAL - MODIS.gif' %}" alt="Promedio Histórico NDSI Mensual" class="img-fluid ">
+                    </div>
+
+                    <div class="col-6 zoom">
+                      <h3>Promedio Histórico NDSI Anual</h3>
+                      <img src="{% static 'img/cartografia/PROMEDIO HISTORICO NDSI ANUAL - MODIS.gif' %}" alt="Promedio Histórico NDSI Anual" class="img-fluid ">
+                    </div>
+                  </div>
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 pt-5">
+                <h3>Documentación General</h3>
+                <p>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Características</th>
+                                <th>BD1</th>
+                                <th>BD2</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Disponibilidad de datos (años)</td>
+                                <td>2000 - a la fecha</td>
+                                <td>1988 - a la fecha</td>
+                            </tr>
+                            <tr>
+                                <td>Resolución espacial</td>
+                                <td>500 m</td>
+                                <td>10 m - 30 m</td>
+                            </tr>
+                            <tr>
+                                <td>Resolución temporal (cadencia)</td>
+                                <td>diario</td>
+                                <td>6 días - 16 días</td>
+                            </tr>
+                            <tr>
+                                <td>Programa satelital utilizado</td>
+                                <td>MODIS</td>
+                                <td>Landsat y Sentinel</td>
+                            </tr>
+                            <tr>
+                                <td>Tipo de producto obtenido</td>
+                                <td>Producto mejorado reducción de nubes</td>
+                                <td>Producto fusionado</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </p>
+
+                <p>
+                    Las bases de datos de imágenes resultantes del proyecto estarán disponibles para su visualización a través del Observatorio o su descarga.
+                    <ul>
+                        <li><a href="{% url 'display' %}#prototipo5">Visualizador 1: Estado actual - zona central</a></li>
+                        <li><a href="{% url 'display' %}#prototipo1">Visualizador 2: Estado Actual - cuenca del Río Aconcagua</a></li>
+                        <li><a href="{% url 'display' %}#prototipo2">Visualizador 3: Estacional</a></li>
+                        <li><a href="{% url 'display' %}#prototipo3">Visualizador 4: Interanual</a></li>
+                        <li><a href="{% url 'display' %}#prototipo4">Visualizador 5: Descargas</a></li>
+                    </ul>
+                </p>
+
+                <p>
+                  <!-- Agradecemos completar el siguiente formulario para enviar actualizaciones del proyecto. -->
+
+                </p>
+            </div>
+        </div>
+
+        
+
+      </div>
+    </section><!-- End Services Section -->
+
+
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact section-bg">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-in" data-aos-delay="100">
+          <h2>Contacto</h2>
+          <!-- <p>Para mayor información acerca del "Observatorio Satelital de Nieves" o sobre Seminario Inaugural "Monitoreo Satelital de Nieves en el contexto del Cambio Climático", contáctanos a través del siguiente formulario.</p> -->
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-6">
+            <div class="info-box mb-4">
+              <i class="bx bx-map"></i>
+              <h3>Nuestra Dirección</h3>
+              <p>Playa Ancha 850, Valparaíso, Chile</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6">
+            <div class="info-box  mb-4">
+              <i class="bx bx-envelope"></i>
+              <h3>Escríbanos</h3>
+              <p>observatorionieves@upla.cl</p>
+            </div>
+          </div>
+
+
+        </div>
+        
+        <!-- Mapa y Formulario de Contacto -->
+        <!-- <div class="row" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-6 ">
+            <iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3745.936091552179!2d-71.64162874155453!3d-33.02464899522459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689e6c652de701d%3A0x1c6891fdd7b481be!2sUniversidad%20de%20Playa%20Ancha%20de%20Ciencias%20de%20la%20Educaci%C3%B3n%20Casa%20Central!5e1!3m2!1ses-419!2sbg!4v1604543859455!5m2!1ses-419!2sbg" frameborder="0" style="border:0; width: 100%; height: 367px;" allowfullscreen></iframe>
+          </div>
+
+          <div class="col-lg-6">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="form-row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validate"></div>
+                </div>
+                <div class="col-md-6 form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="E-mail" data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validate"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <div class="validate"></div>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Mensaje"></textarea>
+                <div class="validate"></div>
+              </div>
+              <div class="mb-3">
+                <div class="loading">Enviando</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Tu mensaje ha sido enviado. Muchas gracias!</div>
+              </div>
+              <div class="text-center"><button type="submit">Enviar Mensaje</button></div>
+            </form>
+          </div>
+
+        </div> -->
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+{% endblock content %}

@@ -1,0 +1,203 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K1RS457ED3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-K1RS457ED3');
+  </script>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Observatorio Satelital de Nieves - {% block title %}{% endblock title %} </title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/icofont/icofont.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/venobox/venobox.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/owl.carousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/aos/aos.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+  <!-- CSS Observatorio Nieves -->
+  <link href="{% static 'css/obs.css' %}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Squadfree - v2.2.0
+  * Template URL: https://bootstrapmade.com/squadfree-free-bootstrap-template-creative/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top header-transparent">
+    <div class="container d-flex align-items-center">
+
+      <div class="logo mr-auto">
+        <h1 class="text-light"><a href="{% url 'home' %}"><span>OBSERVATORIO NIEVES</span></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+        
+            <li class="{% if request.resolver_match.url_name == "home" %}active{% endif %}">
+                <a href="{% url 'home' %}">Home</a>
+            </li>
+            <li class="{% if request.resolver_match.url_name == "team" %}active{% endif %}">
+                <a href="{% url 'team' %}">Equipo de trabajo</a>
+            </li>
+            <li class="{% if request.resolver_match.url_name == "database" %}active{% endif %}">
+                <a href="{% url 'database' %}">Base de Datos</a>
+            </li>
+
+            <li class="drop-down {% if request.resolver_match.url_name == "display" %}active{% endif %}"><a href="{% url 'display' %}">Visualizadores</a>
+                <ul>
+                    <li><a href="{% url 'display' %}#prototipo5">Visualizador 1: Estado actual - zona central</a></li>
+                    <li><a href="{% url 'display' %}#prototipo1">Visualizador 2: Estado Actual - cuenca del Río Aconcagua</a></li>
+                    <li><a href="{% url 'display' %}#prototipo2">Visualizador 3: Estacional</a></li>
+                    <li><a href="{% url 'display' %}#prototipo3">Visualizador 4: Interanual</a></li>
+                    <li><a href="{% url 'display' %}#prototipo4">Visualizador 5: Descargas</a></li>
+                </ul>
+            </li>
+
+            <li class="drop-down {% if request.resolver_match.url_name == "news" %}active{% endif %}"><a href="">Divulgación</a>
+                <ul>
+                    <li><a href="{% url 'news' %}">Noticias</a></li>
+                    <li><a href="{% url 'events' %}">Eventos de divulgación</a></li>
+                </ul>
+            </li>
+
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End Header -->
+
+  {% block content %}{% endblock content %}
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-info" data-aos="fade-up" data-aos-delay="50">
+              <h3>OSN</h3>
+              <p class="pb-3"><em>Observatorio Satelital de Nives</em></p>
+              <p>
+                Playa Ancha 850 <br>
+                Valparaíso, Chile<br><br>
+                <strong>Email:</strong> observatorionieves@upla.cl<br>
+              </p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links" data-aos="fade-up" data-aos-delay="150">
+            <h4>Enlaces de utilidad</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'home' %}">Inicio</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#about">Información</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#services">Objetivos</a></li>
+              
+              <!--<li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>-->
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links" data-aos="fade-up" data-aos-delay="250">
+            <h4>Otros Enlaces</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://www.upla.cl/" target="_blank">UPLA</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://datoslab.cl/" target="_blank">DatosLab</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="http://primeraseccionaconcagua.cl/" target="_blank">Junta de Vigilancia</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="https://www.upla.cl/noticias/2020/09/11/upla-creara-primer-observatorio-satelital-de-nieves-de-america-del-sur/" target="_blank">OSN</a></li>
+              <!--<li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>-->
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter" data-aos="fade-up" data-aos-delay="350">
+            <h4>Boletín de avances</h4>
+            <p>Si desea estar al tanto del proyecto, complete el formulario:</p>
+            
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSezWLT4Y46nXQY3DKWx0L5qfn6K45ZAL1NbsAfVUSNWUmrGDA/viewform?usp=sf_link" class="btn btn-info" target="_blank">Subscribirse</a>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Observatorio Satelital de Nieves</span></strong>. Todos los Derechos Reservados
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/squadfree-free-bootstrap-template-creative/ -->
+        Diseñada por <a href="https://datoslab.cl/">DatosLab</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/jquery.easing/jquery.easing.min.js' %}"></script>
+  <script src="{% static 'vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'vendor/waypoints/jquery.waypoints.min.js' %}"></script>
+  <script src="{% static 'vendor/counterup/counterup.min.js' %}"></script>
+  <script src="{% static 'vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'vendor/venobox/venobox.min.js' %}"></script>
+  <script src="{% static 'vendor/owl.carousel/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'vendor/aos/aos.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'js/main.js' %}"></script>
+
+  <!-- CSS OBservatorio Nieves -->
+  <script src="{% static 'js/obs.js' %}"></script>
+
+</body>
+
+</html>
