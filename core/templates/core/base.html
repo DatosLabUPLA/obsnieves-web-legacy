@@ -19,12 +19,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <title>Observatorio Satelital de Nieves - {% block title %}{% endblock title %} </title>
-  <meta content="" name="descriptison">
+  <meta content="Observatorio Satelital de Nieves - Chile" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="{% static "img/favicon.png" %}" rel="icon">
+  <link href="{% static "img/apple-touch-icon.png" %}" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -58,38 +58,54 @@
     <div class="container d-flex align-items-center">
 
       <div class="logo mr-auto">
-        <h1 class="text-light"><a href="{% url 'home' %}"><span>OBSERVATORIO NIEVES</span></a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+        <a href="{% url 'home' %}">
+          {% if request.resolver_match.url_name == "home" %}
+          <img src="{% static 'img/logos_obsnieves/logo-horizontal-color-negativo.png' %}" alt="" class="img-fluid" style="min-height: 100px">
+          {% else %}
+          <img src="{% static 'img/logos_obsnieves/logo-horizontal-color-positivo.png' %}" alt="" class="img-fluid" style="min-height: 100px">
+          {% endif %}
+        </a>
       </div>
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
         
             <li class="{% if request.resolver_match.url_name == "home" %}active{% endif %}">
-                <a href="{% url 'home' %}">Home</a>
+                <a href="{% url 'home' %}" class="{% if request.resolver_match.url_name == "home" %}text-white{% else %}txt-naranjo-2{% endif %}"><i class="icofont-home"></i> Inicio</a>
             </li>
-            <li class="{% if request.resolver_match.url_name == "team" %}active{% endif %}">
-                <a href="{% url 'team' %}">Equipo de trabajo</a>
+            <li class="drop-down {% if request.resolver_match.url_name == "team" %}active{% endif %}">
+                <a href="#" class="{% if request.resolver_match.url_name == "home" %}text-white{% else %}txt-naranjo-2{% endif %}">Equipo de trabajo</a>
+                <ul>
+                  <li><a href="{% url 'team_director' %}">Directores</a></li>
+                  <li><a href="{% url 'team_investigator' %}">Investigadores</a></li>
+                  <li><a href="{% url 'team_professional' %}">Profesionales</a></li>
+                  <li><a href="{% url 'team_students' %}">Estudiantes</a></li>
+                  <li><a href="{% url 'team_lab' %}">Laboratorios</a></li>
+                  <li><a href="{% url 'team_associate' %}">Entidades Asociadas</a></li>
+                  <li><a href="{% url 'team_collab' %}">Entidades Colaboradoras</a></li>
+              </ul>
             </li>
-            <li class="{% if request.resolver_match.url_name == "database" %}active{% endif %}">
-                <a href="{% url 'database' %}">Base de Datos</a>
+            <li class="drop-down {% if request.resolver_match.url_name == "database" %}active{% endif %}">
+                <a href="#" class="{% if request.resolver_match.url_name == "home" %}text-white{% else %}txt-naranjo-2{% endif %}">Base de Datos</a>
+                <ul>
+                  <li><a href="{% url 'database' %}">Bases de Datos</a></li>
+                  <li><a href="{% url 'escalation' %}">Escalamiento</a></li>
+              </ul>
             </li>
 
-            <li class="drop-down {% if request.resolver_match.url_name == "display" %}active{% endif %}"><a href="{% url 'display' %}">Visualizadores</a>
+            <li class="drop-down {% if request.resolver_match.url_name == "display" %}active{% endif %}">
+              <a href="#" class="{% if request.resolver_match.url_name == "home" %}text-white{% else %}txt-naranjo-2{% endif %}">Visualizadores</a>
                 <ul>
-                    <li><a href="{% url 'display' %}#prototipo5">Visualizador 1: Estado actual - zona central</a></li>
-                    <li><a href="{% url 'display' %}#prototipo1">Visualizador 2: Estado Actual - cuenca del Río Aconcagua</a></li>
-                    <li><a href="{% url 'display' %}#prototipo2">Visualizador 3: Estacional</a></li>
-                    <li><a href="{% url 'display' %}#prototipo3">Visualizador 4: Interanual</a></li>
-                    <li><a href="{% url 'display' %}#prototipo4">Visualizador 5: Descargas</a></li>
+                    <li><a href="{% url 'display_description' %}">Visualizadores Descripción</a></li>
+                    <li><a href="{% url 'display' %}">Visualizadores 1 - 5</a></li>
                 </ul>
             </li>
 
-            <li class="drop-down {% if request.resolver_match.url_name == "news" %}active{% endif %}"><a href="">Divulgación</a>
+            <li class="drop-down {% if request.resolver_match.url_name == "news" %}active{% endif %}">
+              <a href="#" class="{% if request.resolver_match.url_name == "home" %}text-white{% else %}txt-naranjo-2{% endif %}">Divulgación</a>
                 <ul>
                     <li><a href="{% url 'news' %}">Noticias</a></li>
-                    <li><a href="{% url 'events' %}">Eventos de divulgación</a></li>
+                    <li><a href="{% url 'events' %}">Eventos</a></li>
                 </ul>
             </li>
 
@@ -99,51 +115,56 @@
     </div>
   </header><!-- End Header -->
 
+  <section id="{% if request.resolver_match.url_name == 'home' %}hero{% else %}hero-obs{% endif %}" class="" style=""></section>
+
   {% block content %}{% endblock content %}
 
+  <section id="page-bottom"></section>
+
   <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="footer-top">
+  <footer id="footer" class="bg-azul-1">
+    <div class="footer-top ">
       <div class="container">
         <div class="row">
 
           <div class="col-lg-4 col-md-6">
-            <div class="footer-info" data-aos="fade-up" data-aos-delay="50">
-              <h3>OSN</h3>
-              <p class="pb-3"><em>Observatorio Satelital de Nives</em></p>
-              <p>
+            <div class="footer-info " data-aos="fade-up" data-aos-delay="50">
+              <h3>
+                <img src="{% static 'img/logos_obsnieves/logo-horizontal-color-positivo.png' %}" alt="" class="img-fluid" style="min-height: 100px">
+              </h3>
+              <p class="txt-azul-1">
                 Playa Ancha 850 <br>
                 Valparaíso, Chile<br><br>
-                <strong>Email:</strong> observatorionieves@upla.cl<br>
+                <i class="icofont-email icofont-2x"></i> observatorionieves@upla.cl<br>
               </p>
-              <div class="social-links mt-3">
+              <!-- <div class="social-links mt-3">
                 <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
                 <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
                 <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
                 <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
                 <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-              </div>
+              </div> -->
             </div>
           </div>
 
           <div class="col-lg-2 col-md-6 footer-links" data-aos="fade-up" data-aos-delay="150">
-            <h4>Enlaces de utilidad</h4>
+            <h4 class="text-uppercase txt-azul-2">Enlaces de utilidad</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'home' %}">Inicio</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#about">Información</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#services">Objetivos</a></li>
+              <li><i class="bx bx-chevron-right txt-azul-2"></i> <a href="{% url 'home' %}">Inicio</a></li>
+              <li><i class="bx bx-chevron-right txt-azul-2"></i> <a href="#about">Información</a></li>
+              <li><i class="bx bx-chevron-right txt-azul-2"></i> <a href="#services">Objetivos</a></li>
               
               <!--<li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>-->
             </ul>
           </div>
 
           <div class="col-lg-2 col-md-6 footer-links" data-aos="fade-up" data-aos-delay="250">
-            <h4>Otros Enlaces</h4>
+            <h4 class="text-uppercase txt-azul-2">Otros Enlaces</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="https://www.upla.cl/" target="_blank">UPLA</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="https://datoslab.cl/" target="_blank">DatosLab</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="http://primeraseccionaconcagua.cl/" target="_blank">Junta de Vigilancia</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="https://www.upla.cl/noticias/2020/09/11/upla-creara-primer-observatorio-satelital-de-nieves-de-america-del-sur/" target="_blank">OSN</a></li>
+              <li><i class="bx bx-chevron-right txt-azul-2"></i> <a href="https://www.upla.cl/" target="_blank">UPLA</a></li>
+              <li><i class="bx bx-chevron-right txt-azul-2"></i> <a href="https://datoslab.cl/" target="_blank">DatosLab</a></li>
+              <li><i class="bx bx-chevron-right txt-azul-2"></i> <a href="http://primeraseccionaconcagua.cl/" target="_blank">Junta de Vigilancia</a></li>
+              <li><i class="bx bx-chevron-right txt-azul-2"></i> <a href="https://www.upla.cl/noticias/2020/09/11/upla-creara-primer-observatorio-satelital-de-nieves-de-america-del-sur/" target="_blank">OSN</a></li>
               <!--<li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>-->
@@ -151,10 +172,10 @@
           </div>
 
           <div class="col-lg-4 col-md-6 footer-newsletter" data-aos="fade-up" data-aos-delay="350">
-            <h4>Boletín de avances</h4>
+            <h4 class="text-uppercase txt-azul-2">Boletín de avances</h4>
             <p>Si desea estar al tanto del proyecto, complete el formulario:</p>
             
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSezWLT4Y46nXQY3DKWx0L5qfn6K45ZAL1NbsAfVUSNWUmrGDA/viewform?usp=sf_link" class="btn btn-info" target="_blank">Subscribirse</a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSezWLT4Y46nXQY3DKWx0L5qfn6K45ZAL1NbsAfVUSNWUmrGDA/viewform?usp=sf_link" class="btn btn-obs-info text-uppercase" target="_blank">Subscribirse</a>
 
           </div>
 

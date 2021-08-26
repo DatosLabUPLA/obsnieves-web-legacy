@@ -1,0 +1,89 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block title %}Investigadores{% endblock title %}
+
+{% block content %}
+
+<section id="page-title">
+    <h2>Equipo de Trabajo</h2>
+</section>
+
+<main id="main" class="p-3">
+
+  <div class="container">
+      <div class="row">
+          <i class="icofont-home"></i> Equipo de Trabajo / Investigadores
+      </div>
+  </div>
+
+  <section class="p-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="text-uppercase txt-naranjo-2">Investigadores</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="p-3">
+    <div class="container team-obs">
+      <div class="row ">
+        <div class="col-2">
+          <img src="{% static "img/team/freddy_saavedra.png" %}" alt="" class="img-fluid team-image-obs">
+        </div>
+        <div class="col-10">
+          <div class="col-12">
+            <p class="text-uppercase font-weight-bold">
+              <span class="txt-azul-2 ">Freddy Saavedra</span> -  <span class="font-weight-bold">Investigador principal</span>
+            </p>
+          </div>
+          <div class="col-12">
+            <p class="text-justify">
+                Ingeniero agrónomo. PhD en Ciencias de la Tierra en Colorado State University, posee experiencia en manejo de imágenes satelitales específicamente en productos de nieve. Actualmente se desempeña como docente de la carrera de Geografía UPLA y encargado del Laboratorio de Teledetección Ambiental (TeleAmb). Como  Investigador de la propuesta, será el responsable del desarrollo de la investigación sobre los  algoritmos de nieves y la producción de los productos de nieves.
+            </p>
+          </div>
+          <div class="col-12">
+            <p class="font-weight-bold">
+              <i class="icofont-email icofont-1x"></i> 
+              freddy.saavedra@upla.cl 
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="p-3">
+    <div class="container team-obs">
+      <div class="row ">
+        <div class="col-2">
+          <img src="{% static "img/team/miguel_guevara.png" %}" alt="" class="img-fluid team-image-obs">
+        </div>
+        <div class="col-10">
+          <div class="col-12">
+            <p class="text-uppercase font-weight-bold">
+              <span class="txt-azul-2">Miguel Guevara</span> -  <span class="">Investigador principal</span>
+            </p>
+          </div>
+          <div class="col-12">
+            <p class="text-justify">
+                Ingeniero informático. Cuenta con experiencia investigando en el  análisis de altos volúmenes de datos, así como también, en el desarrollo de aplicaciones web  modernas que obtienen información de manera automática desde la web. Posee experiencia en el desarrollo de proyectos utilizando altos volúmenes de datos y  también en el desarrollo de aplicaciones en formato web. En el ámbito de la investigación, el investigador  ha trabajado en el desarrollo de nuevos modelos de análisis. Sus trabajos involucran el análisis de  publicaciones científicas o el análisis de desigualdad en industrias y productos. En el área de desarrollo de software, ha desarrollado software con propósito científico como  el package para R diverse y también ha dirigido equipos de desarrollo de  software para aplicaciones web de utilidad pública. Como Investigador de la propuesta, será el responsable del  desarrollo de la plataforma online y del análisis masivo de los algoritmos desarrollados en la  investigación de la propuesta.
+            </p>
+          </div>
+          <div class="col-12">
+            <p class="font-weight-bold">
+              <i class="icofont-email icofont-1x"></i> 
+              miguel.guevara@upla.cl
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main><!-- End #main -->
+
+{% endblock content %}
