@@ -1,0 +1,88 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block title %}Laboratorios{% endblock title %}
+
+{% block content %}
+
+<section id="page-title">
+    <h2>Equipo de Trabajo</h2>
+</section>
+
+<main id="main" class="p-3">
+
+  <div class="container">
+      <div class="row">
+          <i class="icofont-home"></i> Equipo de Trabajo / Laboratorios
+      </div>
+  </div>
+
+  <section class="p-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-12"></div>
+          <h2 class="text-uppercase txt-naranjo-2">Laboratorios</h2>
+      </div>
+    </div>
+  </section>
+
+  <section class="p-3">
+    <div class="container team-obs">
+      <div class="row ">
+        <div class="col-3">
+          <img src="{% static "img/team/teleamb.png" %}" alt="" class="img-fluid">
+        </div>
+        <div class="col-9">
+          <div class="col-12">
+            <p class="text-uppercase font-weight-bold">
+              <span class="txt-azul-2 ">TeleAmb</span>
+            </p>
+          </div>
+          <div class="col-12">
+            <p class="text-justify">
+                El laboratorio de Teledetección Ambiental (TeleAmb) a cargo del Dr. Saavedra desde el 2019 cuenta con uno de sus objetivos el monitoreo de procesos ambientales mediante la utilización intensiva de imágenes satelitales y la teledetección el cual se alinea con el presente FONDEF. Además, con el desarrollo de este proyecto se fortalecerá la línea de investigación sobre la criosfera que ha sido una de las áreas de investigación más fructífera del laboratorio.
+            </p>
+          </div>
+          <div class="col-12">
+            <p class="font-weight-bold">
+              <i class="icofont-web icofont-1x"></i> 
+              <a href="#">teleamb.cl</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="p-3">
+    <div class="container team-obs">
+      <div class="row ">
+        <div class="col-9">
+          <div class="col-12">
+            <p class="text-uppercase font-weight-bold">
+              <span class="txt-azul-2">Datos Lab</span>
+            </p>
+          </div>
+          <div class="col-12">
+            <p class="text-justify">
+                Laboratorio de Data Science de la Facultad de Ingeniería de la Universidad de Playa Ancha. Desarrolla investigación en temáticas diversas con orientación social y territorial. Su Director es el Investigador Miguel R. Guevara. Líneas de investigación: Open Data, Data Analytics, Networks, y Data Visualization.
+            </p>
+          </div>
+          <div class="col-12">
+            <p class="font-weight-bold">
+              <i class="icofont-web icofont-1x"></i> 
+              <a href="https://datoslab.cl" target="_blank">datoslab.cl</a>
+            </p>
+          </div>
+        </div>
+        <div class="col-3">
+            <img src="{% static "img/team/datoslab.png" %}" alt="" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main><!-- End #main -->
+
+{% endblock content %}

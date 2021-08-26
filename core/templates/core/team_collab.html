@@ -1,0 +1,54 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block title %}Entidades Colaboradoras{% endblock title %}
+
+{% block content %}
+
+<section id="page-title">
+    <h2>Equipo de Trabajo</h2>
+</section>
+
+<main id="main" class="p-3">
+
+  <div class="container">
+      <div class="row">
+          <i class="icofont-home"></i> Equipo de Trabajo / Entidades Colaboradoras
+      </div>
+  </div>
+
+  <section class="p-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-12"></div>
+          <h2 class="text-uppercase txt-naranjo-2">Entidades Colaboradoras</h2>
+      </div>
+    </div>
+  </section>
+
+  <section class="p-3">
+    <div class="container team-obs">
+      <div class="row ">
+        <div class="col-3">
+          <img src="{% static "img/team/universidad_colorado.png" %}" alt="" class="img-fluid">
+        </div>
+        <div class="col-9">
+          <div class="col-12">
+            <p class="text-uppercase font-weight-bold">
+              <span class="txt-azul-2 ">Colorado State University/ Laboratorio de Ecología de Recursos Naturales</span>
+            </p>
+          </div>
+          <div class="col-12">
+            <p class="text-justify">
+                Dentro de las entidades colaboradoras del proyecto, se cuenta con la Colorado State University, específicamente el Laboratorio de Ecología de Recursos Naturales. En dicho laboratorio se cuenta con la colaboración de especialistas tanto en teledetección y nieves (https://www.nrel.colostate.edu/investigator/stephanie-kampf-homepage)  como en hidrología de nieves (https://www.nrel.colostate.edu/investigator/steven-fassnacht-homepage/) que permitirán asegurar los alcances científicos de la propuesta. El grupo de investigación de la Dra. Kampf se centra en hidrología física a través de escalas espaciales, desde parcelas hasta cuencas. El Dr. Fassnacht es un hidrólogo de nieve que estudia la variabilidad espacio-temporal en las propiedades de la superficie terrestre y cómo un clima cambiante impacta los recursos hídricos. Los proyectos examinan cómo la generación de escorrentía se ve afectada por el clima, las características del paisaje y la alteración del paisaje. Los proyectos de investigación actuales exploran estos temas en entornos montañosos y áridos utilizando el monitoreo de campo, la teledetección y modelos tanto conceptuales como físicos.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main><!-- End #main -->
+
+{% endblock content %}
