@@ -14,6 +14,21 @@
 
     gtag('config', 'G-K1RS457ED3');
   </script>
+
+  <script>
+    (function() {
+      var h, a, f;
+      a = document.getElementsByTagName('link');
+      for (h = 0; h < a.length; h++) {
+        f = a[h];
+        if (f.rel.toLowerCase().match(/stylesheet/) && f.href) {
+          var g = f.href.replace(/(&|\?)rnd=\d+/, '');
+          f.href = g + (g.match(/\?/) ? '&' : '?');
+          f.href += 'rnd=' + (new Date().valueOf());
+        }
+      } // for
+    })()
+  </script>
   
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -115,7 +130,7 @@
     </div>
   </header><!-- End Header -->
 
-  <section id="{% if request.resolver_match.url_name == 'home' %}hero{% else %}hero-obs{% endif %}" class="" style=""></section>
+  <section id="{% if request.resolver_match.url_name == 'home' %}hero{% else %}hero-obs{% endif %}" class=""></section>
 
   {% block content %}{% endblock content %}
 
