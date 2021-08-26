@@ -4,9 +4,6 @@ from django.shortcuts import render
 def home(request):
     return render(request, 'core/home.html')
 
-def team(request):
-    return render(request, 'core/team.html')
-
 def team_director(request):
     return render(request, 'core/team_director.html')
 
@@ -31,6 +28,13 @@ def team_collab(request):
 
 def database(request):
     return render(request, 'core/database.html')
+
+def escalation(request):
+    return render(request, 'core/escalation.html')
+
+
+def display_description(request):
+    return render(request, 'core/display_description.html')
 
 def display(request):
     return render(request, 'core/display.html')

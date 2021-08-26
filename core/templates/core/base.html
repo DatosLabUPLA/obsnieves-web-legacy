@@ -89,15 +89,15 @@
                 <a href="#" class="{% if request.resolver_match.url_name == "home" %}text-white{% else %}txt-naranjo-2{% endif %}">Base de Datos</a>
                 <ul>
                   <li><a href="{% url 'database' %}">Bases de Datos</a></li>
-                  <li><a href="{% url 'display' %}#prototipo1">Escalamiento</a></li>
+                  <li><a href="{% url 'escalation' %}">Escalamiento</a></li>
               </ul>
             </li>
 
             <li class="drop-down {% if request.resolver_match.url_name == "display" %}active{% endif %}">
               <a href="#" class="{% if request.resolver_match.url_name == "home" %}text-white{% else %}txt-naranjo-2{% endif %}">Visualizadores</a>
                 <ul>
-                    <li><a href="{% url 'display' %}#prototipo5">Visualizadores Descripción</a></li>
-                    <li><a href="{% url 'display' %}#prototipo1">Visualizadores 1 - 5</a></li>
+                    <li><a href="{% url 'display_description' %}">Visualizadores Descripción</a></li>
+                    <li><a href="{% url 'display' %}">Visualizadores 1 - 5</a></li>
                 </ul>
             </li>
 

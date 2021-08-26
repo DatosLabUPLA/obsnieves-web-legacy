@@ -24,18 +24,22 @@ urlpatterns = [
     path('', core_views.home, name='home'),
 
     path('equipo/', core_views.team_director, name='team'),
-    path('equipo/directores', core_views.team_director, name='team_director'),
-    path('equipo/investigadores', core_views.team_investigator, name='team_investigator'),
-    path('equipo/profesionales', core_views.team_professional, name='team_professional'),
-    path('equipo/estudiantes', core_views.team_students, name='team_students'),
-    path('equipo/laboratorios', core_views.team_lab, name='team_lab'),
-    path('equipo/entidades-asociadas', core_views.team_associate, name='team_associate'),
-    path('equipo/entidades-colaboradoras', core_views.team_collab, name='team_collab'),
+    path('equipo/directores/', core_views.team_director, name='team_director'),
+    path('equipo/investigadores/', core_views.team_investigator, name='team_investigator'),
+    path('equipo/profesionales/', core_views.team_professional, name='team_professional'),
+    path('equipo/estudiantes/', core_views.team_students, name='team_students'),
+    path('equipo/laboratorios/', core_views.team_lab, name='team_lab'),
+    path('equipo/entidades-asociadas/', core_views.team_associate, name='team_associate'),
+    path('equipo/entidades-colaboradoras/', core_views.team_collab, name='team_collab'),
 
-    path('basededatos', core_views.database, name='database'),
-    path('visualizadores', core_views.display, name='display'),
-    path('noticias', core_views.news, name='news'),
-    path('eventos', core_views.events, name='events'),
+    path('basededatos/', core_views.database, name='database'),
+    path('escalamiento/', core_views.escalation, name='escalation'),
+
+    path('visualizadores/', core_views.display, name='display'),
+    path('visualizadores/descripcion', core_views.display_description, name='display_description'),
+
+    path('noticias/', core_views.news, name='news'),
+    path('eventos/', core_views.events, name='events'),
 
     path('prueba/', core_views.events, name='events'),
 ]
