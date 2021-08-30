@@ -229,3 +229,7 @@ section .short{
 	border-radius: 50%;
 	background-color: var(--color-verde-1);
 }
+
+.mobile-nav-active .mobile-nav a{
+	color: #CF653D !important;
+}
