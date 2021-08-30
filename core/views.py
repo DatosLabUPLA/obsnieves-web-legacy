@@ -4,6 +4,9 @@ from django.shortcuts import render
 def home(request):
     return render(request, 'core/home.html')
 
+def team(request):
+    return render(request, 'core/team.html')
+
 def team_director(request):
     return render(request, 'core/team_director.html')
 

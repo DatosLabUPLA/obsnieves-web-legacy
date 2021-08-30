@@ -2,248 +2,413 @@
 
 {% load static %}
 
-{% block title %}Equipo{% endblock title %}
+{% block title %}Directores{% endblock title %}
 
 {% block content %}
-<!-- ======= Hero Section ======= -->
-  <section id="hero">
-    <div class="hero-container" data-aos="fade-up">
+
+<section id="page-title">
+    <h2>Equipo de Trabajo</h2>
+</section>
+
+<main id="main" class="p-3">
+
+  <div class="container">
+      <div class="row">
+          <i class="icofont-home"></i> Equipo de Trabajo / Equipo
+      </div>
+  </div>
+
+  <section id="" class="p-3">
+    <div class="container">
+      <div class="row justify-content-around">
+        <div class="col-3">
+          <img src="{% static "img/place-holder.png" %}" alt="" class="img-fluid">
+        </div>
+        <div class="col-9">
+          <p class="text-justify">
+            Para la ejecución del proyecto se conformó un equipo de trabajo compuesto por investigadores de la Facultad de Ciencias Naturales y Exactas y Facultad de Ingeniería de la Universidad de Playa Ancha a través de los laboratorios de Teledetección Ambiental (TeleAmb) y Data Science (Datoslab). Se incorporaron jóvenes profesionales para la ejecución tanto en terreno como en el desarrollo de los algoritmos de eliminación de nubes.
+          </p>
+        </div>
+      </div>  
     </div>
-  </section><!-- End Hero -->
+  </section>
 
-  <main id="main" class="p-3">
-
-  
-    <!-- ======= Team Section ======= -->
-    <section id="team" class="team">
-
-    <!-- Laboratorios UPLA -->
-      <div class="container">
-
-        <div class="section-title" data-aos="fade-in" data-aos-delay="100">
-          <h2>Laboratorios UPLA</h2>
-          <p>Durante dos años trabajarán especialistas de la Universidad de Playa Ancha para generar una plataforma de base de datos sobre nieves de la Cordillera de los Andes, iniciativa piloto e inédita en América del Sur.</p>
+  <section class="pb-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="text-uppercase txt-naranjo-2">Directores</h2>
         </div>
-
-        <div class="row">
-
-          <div class="col-lg-4 col-md-6">
-            <div class="member" data-aos="fade-up" data-aos-delay="150">
-              <div class="col-md-10 container-fluid"><img src="{% static 'img/team/anid.png' %}" class="img-fluid" alt="Agencia Nacional de Investigación y Desarrollo"></div>
-              <!-- <div class="member-info">
-                <h4>ANID</h4>
-                <span>Fondo de Fomento al Desarrollo Científico y Tecnológico</span>
-                <div class="social">
-                  <a href=""><i class="icofont-twitter"></i></a>
-                  <a href=""><i class="icofont-facebook"></i></a>
-                  <a href=""><i class="icofont-instagram"></i></a>
-                  <a href=""><i class="icofont-linkedin"></i></a> 
-                </div>
-              </div> -->
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div class="member" data-aos="fade-up" data-aos-delay="150">
-              <div class="col-md-10 container-fluid"><img src="{% static 'img/team/datoslab.png' %}" class="img-fluid" alt="DatosLab"></div>
-              <!-- <div class="member-info">
-                <h4>DatosLab</h4>
-                <span>Facultad de Ingeniería, Universidad de Playa Ancha</span>
-                <div class="social">
-                  <a href=""><i class="icofont-twitter"></i></a>
-                  <a href=""><i class="icofont-facebook"></i></a>
-                  <a href=""><i class="icofont-instagram"></i></a>
-                  <a href=""><i class="icofont-linkedin"></i></a>
-                </div>
-              </div> -->
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div class="member" data-aos="fade-up" >
-              <div class="col-md-10 container-fluid"><img src="{% static 'img/team/teleamb.png' %}" class="img-fluid" alt="TeleAmb"></div>
-              <!-- <div class="member-info">
-                <h4>Laboratorio de Teledetección y Monitoreo Ambiental</h4>
-                <span>Facultad de Ciencias Naturales y Exactas, Universidad de Playa Ancha</span>
-                <div class="social">
-                  <a href=""><i class="icofont-twitter"></i></a>
-                  <a href=""><i class="icofont-facebook"></i></a>
-                  <a href=""><i class="icofont-instagram"></i></a>
-                  <a href=""><i class="icofont-linkedin"></i></a>
-                </div>
-              </div> -->
-            </div>
-          </div>
-
-        </div>
-
       </div>
+    </div>
+  </section>
 
-
-
-      <!-- Entidades Asociadas -->
-      <div class="container">
-
-        <div class="section-title" data-aos="fade-in" data-aos-delay="100">
-          <h2>Entidades Asociadas</h2>
-          <!-- <p>Durante dos años trabajarán especialistas de la Universidad de Playa Ancha para generar una plataforma de base de datos sobre nieves de la Cordillera de los Andes, iniciativa piloto e inédita en América del Sur.</p> -->
+  <section class="p-3">
+    <div class="container team-obs">
+      <div class="row ">
+        <div class="col-2">
+          <img src="{% static "img/team/carlos_romero.png" %}" alt="" class="img-fluid team-image-obs">
         </div>
-
-        <div class="row">
-
-            <div class="col-lg-4 col-md-6">
-                <div class="member" data-aos="fade-up">
-                  <div class="col-md-10 container-fluid"><img src="{% static 'img/team/universidad_colorado.png' %}"  class="img-fluid" alt="Colorado State University"></div>
-                  <!-- <div class="member-info">
-                    <h4>Colorado State University</h4>
-                    <span>Universidad Estatal de Colorado</span>
-                    <div class="social">
-                      <a href=""><i class="icofont-twitter"></i></a>
-                      <a href=""><i class="icofont-facebook"></i></a>
-                      <a href=""><i class="icofont-instagram"></i></a>
-                      <a href=""><i class="icofont-linkedin"></i></a>
-                    </div>
-                  </div> -->
-                </div>
-              </div>
-
-            <div class="col-lg-4 col-md-6">
-                <div class="member" data-aos="fade-up">
-                    <div class="col-md-10 container-fluid"><img src="{% static 'img/team/seremi_valpo.png' %}"  class="img-fluid" alt="SEREMI Agricultura Valparaíso"></div>
-                    <!-- <div class="member-info">
-                    <h4>SEREMI Ministerio de Agricultura Región de Valparaíso</h4>
-                    <span>Universidad Estatal de Colorado</span>
-                    <div class="social">
-                        <a href=""><i class="icofont-twitter"></i></a>
-                        <a href=""><i class="icofont-facebook"></i></a>
-                        <a href=""><i class="icofont-instagram"></i></a>
-                        <a href=""><i class="icofont-linkedin"></i></a>
-                    </div>
-                    </div> -->
-                </div>
-            </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div class="member" data-aos="fade-up">
-              <div class="col-md-10 container-fluid"><img src="{% static 'img/team/junta_vigilancia.png' %}" class="img-fluid" alt="Junta de Vigilancia Primera Sección Río Aconcagua"></div>
-              <!-- <div class="member-info">
-                <h4>Junta de Vigilancia Primera Sección Río Aconcagua</h4>
-                <span>Universidad Estatal de Colorado</span>
-                <div class="social">
-                  <a href=""><i class="icofont-twitter"></i></a>
-                  <a href=""><i class="icofont-facebook"></i></a>
-                  <a href=""><i class="icofont-instagram"></i></a>
-                  <a href=""><i class="icofont-linkedin"></i></a>
-                </div>
-              </div> -->
-            </div>
+        <div class="col-10">
+          <div class="col-12">
+            <p class="text-uppercase font-weight-bold">
+              <span class="txt-azul-2">Carlos Romero</span> -  <span class="">Director</span>
+            </p>
           </div>
-
-          
-
-        </div>
-
-        <div class="row">
-          <div class="col-lg-4 col-md-6"></div>
-          
-          <div class="col-lg-4 col-md-6">
-            <div class="member" data-aos="fade-up">
-              <div class="col-md-10 container-fluid"><img src="{% static 'img/team/prisma_ingenieria.png' %}" class="img-fluid" alt="Prisma Ingeniería"></div>
-              <!-- <div class="member-info">
-                <h4>Prisma Ingeniería</h4>
-                <span>Facultad de Ciencias Naturales y Exactas</span>
-                <div class="social">
-                  <a href=""><i class="icofont-twitter"></i></a>
-                  <a href=""><i class="icofont-facebook"></i></a>
-                  <a href=""><i class="icofont-instagram"></i></a>
-                  <a href=""><i class="icofont-linkedin"></i></a>
-                </div>
-              </div> -->
-            </div>
+          <div class="col-12">
+            <p class="text-justify">
+              Geógrafo. Especialista en el manejo de herramientas Sistema de Información  Geográficas (SIG), percepción remota satelital y del manejo de Plataformas Aéreas no Tripuladas  (Unmanned Aircraft System, UAS) conocidos coloquialmente como drones. Posee una experiencia de  18 años como consultor para empresas privadas en proyectos de manejo de cuencas y de cauces,  planes maestros de aguas lluvias (licitados por la DOH-MOP) y estudios de riesgos de remociones en  masa o aluviones. Su experiencia con el mundo privado le ha permitido desarrollar la capacidad de  enfocarse en soluciones prácticas con base científica y capacidad de interactuar con los  requerimientos del mundo privado.
+            </p>
           </div>
-
-          <div class="col-lg-4 col-md-6"></div>
-      
+          <div class="col-12">
+            <p class="font-weight-bold">
+              <i class="icofont-email icofont-1x"></i> 
+              cromero@upla.cl
+            </p>
+          </div>
         </div>
-
       </div>
+    </div>
+  </section>
 
-
-
-
-
-
-    </section><!-- End Team Section -->
-
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact section-bg">
-      <div class="container">
-
-        <div class="section-title" data-aos="fade-in" data-aos-delay="100">
-          <h2>Contacto</h2>
-          <!-- <p>Para mayor información acerca del "Observatorio Satelital de Nieves" o sobre Seminario Inaugural "Monitoreo Satelital de Nieves en el contexto del Cambio Climático", contáctanos a través del siguiente formulario.</p> -->
+  <section class="p-3">
+    <div class="container team-obs">
+      <div class="row ">
+        <div class="col-2">
+          <img src="{% static "img/team/antonio_ugalde.png" %}" alt="" class="img-fluid team-image-obs">
         </div>
-
-        <div class="row" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-lg-6">
-            <div class="info-box mb-4">
-              <i class="bx bx-map"></i>
-              <h3>Nuestra Dirección</h3>
-              <p>Playa Ancha 850, Valparaíso, Chile</p>
-            </div>
+        <div class="col-10">
+          <div class="col-12">
+            <p class="text-uppercase font-weight-bold">
+              <span class="txt-azul-2">Antonio Ugalde</span> -  <span class="">Director alterno</span>
+            </p>
           </div>
-
-          <div class="col-lg-6 col-md-6">
-            <div class="info-box  mb-4">
-              <i class="bx bx-envelope"></i>
-              <h3>Escríbanos</h3>
-              <p>observatorionieves@upla.cl</p>
-            </div>
+          <div class="col-12">
+            <p class="text-justify">
+              Posee una larga experiencia en trabajo con actores públicos y privados regionales. Se ha desempeñado en las áreas de gestión y dirección de proyectos, programas e  iniciativas de interés público. Ha sido representante de la UPLA en diversas instancias de  coordinación con el Gobierno Regional, como las mesas hídricas y el comité regional de Cambio  Climático y ha dirigido o co-dirigido proyectos en materias de gestión y gobernanza del agua y  adaptación al cambio climático.
+            </p>
           </div>
-
-
+          <div class="col-12">
+            <p class="font-weight-bold">
+              <i class="icofont-email icofont-1x"></i> 
+              antonio.ugalde@upla.cl 
+            </p>
+          </div>
         </div>
-        
-        <!-- Mapa y Formulario de Contacto -->
-        <!-- <div class="row" data-aos="fade-up" data-aos-delay="200">
-
-          <div class="col-lg-6 ">
-            <iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3745.936091552179!2d-71.64162874155453!3d-33.02464899522459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689e6c652de701d%3A0x1c6891fdd7b481be!2sUniversidad%20de%20Playa%20Ancha%20de%20Ciencias%20de%20la%20Educaci%C3%B3n%20Casa%20Central!5e1!3m2!1ses-419!2sbg!4v1604543859455!5m2!1ses-419!2sbg" frameborder="0" style="border:0; width: 100%; height: 367px;" allowfullscreen></iframe>
-          </div>
-
-          <div class="col-lg-6">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="form-row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                  <div class="validate"></div>
-                </div>
-                <div class="col-md-6 form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="E-mail" data-rule="email" data-msg="Please enter a valid email" />
-                  <div class="validate"></div>
-                </div>
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                <div class="validate"></div>
-              </div>
-              <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Mensaje"></textarea>
-                <div class="validate"></div>
-              </div>
-              <div class="mb-3">
-                <div class="loading">Enviando</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Tu mensaje ha sido enviado. Muchas gracias!</div>
-              </div>
-              <div class="text-center"><button type="submit">Enviar Mensaje</button></div>
-            </form>
-          </div>
-
-        </div> -->
-
       </div>
-    </section><!-- End Contact Section -->
+    </div>
+  </section>
 
-  </main><!-- End #main -->
+  <section class="p-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="text-uppercase txt-naranjo-2">Investigadores</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="p-3">
+    <div class="container team-obs">
+      <div class="row ">
+        <div class="col-2">
+          <img src="{% static "img/team/freddy_saavedra.png" %}" alt="" class="img-fluid team-image-obs">
+        </div>
+        <div class="col-10">
+          <div class="col-12">
+            <p class="text-uppercase font-weight-bold">
+              <span class="txt-azul-2 ">Freddy Saavedra</span> -  <span class="font-weight-bold">Investigador principal</span>
+            </p>
+          </div>
+          <div class="col-12">
+            <p class="text-justify">
+                Ingeniero agrónomo. PhD en Ciencias de la Tierra en Colorado State University, posee experiencia en manejo de imágenes satelitales específicamente en productos de nieve. Actualmente se desempeña como docente de la carrera de Geografía UPLA y encargado del Laboratorio de Teledetección Ambiental (TeleAmb). Como  Investigador de la propuesta, será el responsable del desarrollo de la investigación sobre los  algoritmos de nieves y la producción de los productos de nieves.
+            </p>
+          </div>
+          <div class="col-12">
+            <p class="font-weight-bold">
+              <i class="icofont-email icofont-1x"></i> 
+              freddy.saavedra@upla.cl 
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="p-3">
+    <div class="container team-obs">
+      <div class="row ">
+        <div class="col-2">
+          <img src="{% static "img/team/miguel_guevara.png" %}" alt="" class="img-fluid team-image-obs">
+        </div>
+        <div class="col-10">
+          <div class="col-12">
+            <p class="text-uppercase font-weight-bold">
+              <span class="txt-azul-2">Miguel Guevara</span> -  <span class="">Investigador principal</span>
+            </p>
+          </div>
+          <div class="col-12">
+            <p class="text-justify">
+                Ingeniero informático. Cuenta con experiencia investigando en el  análisis de altos volúmenes de datos, así como también, en el desarrollo de aplicaciones web  modernas que obtienen información de manera automática desde la web. Posee experiencia en el desarrollo de proyectos utilizando altos volúmenes de datos y  también en el desarrollo de aplicaciones en formato web. En el ámbito de la investigación, el investigador  ha trabajado en el desarrollo de nuevos modelos de análisis. Sus trabajos involucran el análisis de  publicaciones científicas o el análisis de desigualdad en industrias y productos. En el área de desarrollo de software, ha desarrollado software con propósito científico como  el package para R diverse y también ha dirigido equipos de desarrollo de  software para aplicaciones web de utilidad pública. Como Investigador de la propuesta, será el responsable del  desarrollo de la plataforma online y del análisis masivo de los algoritmos desarrollados en la  investigación de la propuesta.
+            </p>
+          </div>
+          <div class="col-12">
+            <p class="font-weight-bold">
+              <i class="icofont-email icofont-1x"></i> 
+              miguel.guevara@upla.cl
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="p-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="text-uppercase txt-naranjo-2">Profesionales</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="p-3">
+    <div class="container team-obs">
+      <div class="row ">
+        <div class="col-2">
+          <img src="{% static "img/team/daniela_gonzalez.png" %}" alt="" class="img-fluid team-image-obs">
+        </div>
+        <div class="col-10">
+          <div class="col-12">
+            <p class="text-uppercase font-weight-bold">
+              <span class="txt-azul-2 ">Daniela González</span> -  <span class="font-weight-bold">Coordinadora de proyecto</span>
+            </p>
+          </div>
+          <div class="col-12">
+            <p class="text-justify">
+                Geógrafa. Profesora de los cursos de Teledetección y Teledetección Aplicada en la carrera de Geografía UPLA. Ha desarrollado investigaciones utilizando teledetección para el seguimiento de incendios, interfaz urbano-forestal mediante el análisis espacio-temporal con imágenes satelitales. Actualmente se desempeña como coordinadora de proyecto del presente proyecto FONDEF en el Laboratorio de Teledetección Ambiental (TeleAmb) de la Universidad de Playa Ancha.
+            </p>
+          </div>
+          <div class="col-12">
+            <p class="font-weight-bold">
+              <i class="icofont-email icofont-1x"></i> 
+              daniela.gonzalez@upla.cl 
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="p-3">
+    <div class="container team-obs">
+      <div class="row ">
+        <div class="col-2">
+          <img src="{% static "img/team/yael_aguirre.png" %}" alt="" class="img-fluid team-image-obs">
+        </div>
+        <div class="col-10">
+          <div class="col-12">
+            <p class="text-uppercase font-weight-bold">
+              <span class="txt-azul-2">Yael Aguirre</span> -  <span class="">Asistente de investigación</span>
+            </p>
+          </div>
+          <div class="col-12">
+            <p class="text-justify">
+                Geógrafa. Profesional con experiencia en el manejo de imágenes satelitales. Ha desarrollado investigaciones utilizando teledetección para el seguimiento de cultivos agrícolas asociado a la expansión agrícola en laderas de cerros, cuerpos de agua, expansión urbana/industrial, mediante el análisis espacio-temporal. Actualmente se desempeña como asistente de investigación del presente proyecto FONDEF en el Laboratorio de Teledetección Ambiental (TeleAmb) de la Universidad de Playa Ancha.
+            </p>
+          </div>
+          <div class="col-12">
+            <p class="font-weight-bold">
+              <i class="icofont-email icofont-1x"></i> 
+              yael.aguirre@upla.cl
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="p-3">
+    <div class="container team-obs">
+      <div class="row ">
+        <div class="col-2">
+          <img src="{% static "img/team/nickolas_bermudez.png" %}" alt="" class="img-fluid team-image-obs">
+        </div>
+        <div class="col-10">
+          <div class="col-12">
+            <p class="text-uppercase font-weight-bold">
+              <span class="txt-azul-2">Nickolas B. Bassi </span> -  <span class="">Asistente de investigación</span>
+            </p>
+          </div>
+          <div class="col-12">
+            <p class="text-justify">
+                Geógrafo. Profesional con experiencia en logística y ejecución de campañas de terreno, trabajo de campo, operación de drones e instrumental de terreno y el desarrollo de investigaciones en áreas costeras en Chile continental e insular asociadas a humedales y estudios de Cambio Climático. Actualmente se desempeña como asistente de investigación del presente proyecto FONDEF del Laboratorio de Teledetección  Ambiental (TeleAmb) de la Universidad de Playa Ancha.
+            </p>
+          </div>
+          <div class="col-12">
+            <p class="font-weight-bold">
+              <i class="icofont-email icofont-1x"></i> 
+              nickolas.bermudez@upla.cl
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="p-3">
+    <div class="container team-obs">
+      <div class="row ">
+        <div class="col-2">
+          <img src="{% static "img/team/ana_hernandez.png" %}" alt="" class="img-fluid team-image-obs">
+        </div>
+        <div class="col-10">
+          <div class="col-12">
+            <p class="text-uppercase font-weight-bold">
+              <span class="txt-azul-2">Ana Hernández</span> -  <span class="">Asistente de investigación</span>
+            </p>
+          </div>
+          <div class="col-12">
+            <p class="text-justify">
+                Magíster en Desarrollo Regional y Medio Ambiente, candidata al Doctorado Interdisciplinario en Ciencias Ambientales de la Universidad de Playa Ancha, posee experiencia en manejo de imágenes satelitales para el estudio de cambios de cobertura terrestre. Actualmente  es profesora de la carrera de Geografía de la Universidad de Playa Ancha y participa del presente proyecto FONDEF como coordinadora del Laboratorio (Lab Manager) de Teledetección Ambiental (TeleAmb).
+            </p>
+          </div>
+          <div class="col-12">
+            <p class="font-weight-bold">
+              <i class="icofont-email icofont-1x"></i> 
+              ana.hernandez@upla.cl
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="p-3">
+    <div class="container team-obs">
+      <div class="row ">
+        <div class="col-2">
+          <img src="{% static "img/team/ezequiel_lagos.png" %}" alt="" class="img-fluid team-image-obs">
+        </div>
+        <div class="col-10">
+          <div class="col-12">
+            <p class="text-uppercase font-weight-bold">
+              <span class="txt-azul-2">Ezequiel Lagos</span> -  <span class="">Asistente de investigación</span>
+            </p>
+          </div>
+          <div class="col-12">
+            <p class="text-justify">
+                Ingeniero Informático. Profesional con experiencia en desarrollo de aplicaciones web, administración de servidores Linux, desarrollo de aplicaciones móviles y soluciones informáticas para empresas. Experiencia en el desarrollo de algoritmos de extracción automática de información (Web Scraping); tecnologías basadas en Python, PHP, HTML, CSS y Javascript; y frameworks de desarrollo web. Actualmente se desempeña como desarrollador del presente proyecto FONDEF en el Laboratorio de Datos (DatosLab) de la Universidad de Playa Ancha.
+            </p>
+          </div>
+          <div class="col-12">
+            <p class="font-weight-bold">
+              <i class="icofont-email icofont-1x"></i> 
+              ezequiel.lagos@upla.cl
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="p-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="text-uppercase txt-naranjo-2">Estudiantes</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="p-3">
+    <div class="container team-obs">
+      <div class="row ">
+        <div class="col-2">
+          <img src="{% static "img/team/valentina_contreras.png" %}" alt="" class="img-fluid team-image-obs">
+        </div>
+        <div class="col-10">
+          <div class="col-12">
+            <p class="text-uppercase font-weight-bold">
+              <span class="txt-azul-2 ">Valentina Contreras</span>
+            </p>
+          </div>
+          <div class="col-12">
+            <p class="text-justify">
+                Es estudiante de la Carrera de Geografía de la Universidad de Playa Ancha, actualmente se encuentra desarrollando su tesis de investigación enfocada en la variabilidad espacio-temporal de la cobertura de nieve y su relación con parámetros climáticos en la cuenca del Río Aconcagua, utilizando teledetección e imágenes satelitales del Programa MODIS.
+            </p>
+          </div>
+          <div class="col-12">
+            <p class="font-weight-bold">
+              <i class="icofont-email icofont-1x"></i> 
+              valentina.contreras@alumnos.upla.cl  
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="p-3">
+    <div class="container team-obs">
+      <div class="row ">
+        <div class="col-2">
+          <img src="{% static "img/team/marcela_ortiz.png" %}" alt="" class="img-fluid team-image-obs">
+        </div>
+        <div class="col-10">
+          <div class="col-12">
+            <p class="text-uppercase font-weight-bold">
+              <span class="txt-azul-2">Marcela Ortiz Silva</span>
+            </p>
+          </div>
+          <div class="col-12">
+            <p class="text-justify">
+                Es estudiante de la Carrera de Geografía de la Universidad de Playa Ancha, actualmente se encuentra desarrollando su tesis de investigación enfocada en el análisis de persistencia de nieve utilizando teledetección e imágenes satelitales del Programa Landsat.
+            </p>
+          </div>
+          <div class="col-12">
+            <p class="font-weight-bold">
+              <i class="icofont-email icofont-1x"></i> 
+              marcela.silva@alumnos.upla.cl
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="p-3">
+    <div class="container team-obs">
+      <div class="row ">
+        <div class="col-2">
+          <img src="{% static "img/team/cristhian_moscoso.png" %}" alt="" class="img-fluid team-image-obs">
+        </div>
+        <div class="col-10">
+          <div class="col-12">
+            <p class="text-uppercase font-weight-bold">
+              <span class="txt-azul-2">Cristhian Moscoso</span>
+            </p>
+          </div>
+          <div class="col-12">
+            <p class="text-justify">
+                Es estudiante de la Carrera de Geografía de la Universidad de Playa Ancha, actualmente se encuentra desarrollando su tesis de investigación enfocada en el análisis espacio temporal de cambios en la cobertura terrestre de un paisaje mediterraneo en la zona central de Chile utilizando teledetección e imágenes satelitales del Programa Landsat
+            </p>
+          </div>
+          <div class="col-12">
+            <p class="font-weight-bold">
+              <i class="icofont-email icofont-1x"></i> 
+              cristhian.moscoso@alumnos.upla.cl 
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main><!-- End #main -->
+
 {% endblock content %}

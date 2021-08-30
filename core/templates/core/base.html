@@ -76,13 +76,12 @@
             <li class="drop-down {% if request.resolver_match.url_name == "team" %}active{% endif %}">
                 <a href="#" class="{% if request.resolver_match.url_name == "home" %}text-white{% else %}txt-naranjo-2{% endif %}">Equipo de trabajo</a>
                 <ul>
-                  <li><a href="{% url 'team_director' %}">Directores</a></li>
-                  <li><a href="{% url 'team_investigator' %}">Investigadores</a></li>
-                  <li><a href="{% url 'team_professional' %}">Profesionales</a></li>
-                  <li><a href="{% url 'team_students' %}">Estudiantes</a></li>
-                  <li><a href="{% url 'team_lab' %}">Laboratorios</a></li>
+                  <li><a href="{% url 'team' %}">Equipo</a></li>
+                  <li><a href="{% url 'team_lab' %}">Entidades</a></li>
+                  {% comment %}
                   <li><a href="{% url 'team_associate' %}">Entidades Asociadas</a></li>
                   <li><a href="{% url 'team_collab' %}">Entidades Colaboradoras</a></li>
+                  {% endcomment %}
               </ul>
             </li>
             <li class="drop-down {% if request.resolver_match.url_name == "database" %}active{% endif %}">
