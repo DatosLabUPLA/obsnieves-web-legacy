@@ -22,10 +22,12 @@
   <section id="visualizador-1" class="p-3 team-obs">
     <div class="container ">
       <div class="row ">
-        <div class="col-3">
-          <img src="{% static "img/assets_maqueta/satelite_2.png" %}" alt="" class="img-fluid">
+        <div class="col-6">
+          <a href="https://observatorionieves.users.earthengine.app/view/estado-actual-zona-central" target="_blank">
+            <img src="{% static "img/visualizadores/visualizador_01.jpg" %}" alt="" class="img-fluid">
+          </a>
         </div>
-        <div class="col-9">
+        <div class="col-6">
           <div class="col-12">
             <p class="font-weight-bold">
               <span class="txt-naranjo-2 ">VISUALIZADOR 1: Estado Actual Zona Central</span>
@@ -35,19 +37,23 @@
             <p class="text-justify">
               A partir de la información histórica disponible del producto de nieves del sensor MODIS (MOD10A1) se calcula el promedio del Índice Normalizado de Nieve (NDSI) para cada día del año (DOY, Day Of Year) en el periodo 2000-2020 correspondiente a la sección media-superior de las cuencas de la zona central. Esta información se compara con el estado actual y se presenta en un gráfico de la actual temporada. La interfaz presente en el mapa permite recorrer y observar la desviación desde el promedio (anomalía) para cada DOY hasta la última imagen más actual disponible.
             </p>
+            <p>
+              <a href="https://observatorionieves.users.earthengine.app/view/estado-actual-zona-central" target="_blank" class="txt-naranjo-2 text-uppercase">
+                <i class="icofont-circled-right txt-naranjo-2"></i>
+                Ver visualizador
+              </a>
+            </p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section>
+  <section >
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <div class="embed-responsive embed-responsive-4by3">
-            <iframe class="embed-responsive-item" src="https://observatorionieves.users.earthengine.app/view/estado-actual-zona-central" allowfullscreen></iframe>
-        </div>
+
         </div>
       </div>
     </div>
@@ -58,10 +64,7 @@
   <section id="visualizador-2" class="p-3 team-obs">
     <div class="container ">
       <div class="row ">
-        <div class="col-3">
-          <img src="{% static "img/assets_maqueta/satelite_2.png" %}" alt="" class="img-fluid">
-        </div>
-        <div class="col-9">
+        <div class="col-5">
           <div class="col-12">
             <p class="font-weight-bold">
               <span class="txt-naranjo-2 ">VISUALIZADOR 2: Estado Actual - cuenca del Río Aconcagua</span>
@@ -71,7 +74,18 @@
             <p class="text-justify">
               Con la información histórica disponible para el producto de nieves del sensor MODIS (MOD10A1) se calcula el promedio del Índice Normalizado de Nieve (NDSI) para cada día del año (DOY, Day Of Year) en el periodo 2000-2020 sobre la sección media-superior de la cuenca del Río Aconcagua. Esta información se compara con el estado actual y se presenta en un gráfico de la actual temporada. La interfaz presente en el mapa permite recorrer y observar la desviación desde el promedio (anomalía) para cada DOY hasta la última imagen más actual disponible.
             </p>
+            <p>
+              <a href="https://observatorionieves.users.earthengine.app/view/estado-actual" target="_blank" class="txt-naranjo-2 text-uppercase">
+                <i class="icofont-circled-right txt-naranjo-2"></i>
+                Ver visualizador
+              </a>
+            </p>
           </div>
+        </div>
+        <div class="col-6">
+          <a href="https://observatorionieves.users.earthengine.app/view/estado-actual" target="_blank">
+            <img src="{% static "img/visualizadores/visualizador_02.jpg" %}" alt="" class="img-fluid">
+          </a>
         </div>
       </div>
     </div>
@@ -81,9 +95,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <div class="embed-responsive embed-responsive-4by3">
-            <iframe class="embed-responsive-item" src="https://observatorionieves.users.earthengine.app/view/estado-actual" allowfullscreen></iframe>
-        </div>
+
         </div>
       </div>
     </div>
@@ -94,10 +106,12 @@
   <section id="visualizador-3" class="p-3 team-obs">
     <div class="container ">
       <div class="row ">
-        <div class="col-3">
-          <img src="{% static "img/assets_maqueta/satelite_2.png" %}" alt="" class="img-fluid">
+        <div class="col-6">
+          <a href="https://observatorionieves.users.earthengine.app/view/promedio-ndsi-mensual" target="_blank">
+            <img src="{% static "img/visualizadores/visualizador_03.jpg" %}" alt="" class="img-fluid">
+          </a>
         </div>
-        <div class="col-9">
+        <div class="col-6">
           <div class="col-12">
             <p class="font-weight-bold">
               <span class="txt-naranjo-2 ">VISUALIZADOR 3: Comparación estacional</span>
@@ -106,6 +120,12 @@
           <div class="col-12">
             <p class="text-justify">
               En base a imágenes satelitales diarias de los producto de nieves MOD10A1 (Terra) y MYD10A1 (Aqua) obtenidas del sensor MODIS, se establece una comparación estacional entre los distintos meses del año sobre la cuenca del Río Aconcagua mediante un panel divisorio. La información es recopilada a partir de los valores del promedio mensual del Índice Normalizado de Nieve (NDSI). Esta interfaz de usuario le permite seleccionar los meses de interés a analizar, desplegando el panel divisorio donde se visualizará el resultado dentro del mapa.
+            </p>
+            <p>
+              <a href="https://observatorionieves.users.earthengine.app/view/promedio-ndsi-mensual" target="_blank" class="txt-naranjo-2 text-uppercase">
+                <i class="icofont-circled-right txt-naranjo-2"></i>
+                Ver visualizador
+              </a>
             </p>
           </div>
         </div>
@@ -117,9 +137,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <div class="embed-responsive embed-responsive-4by3">
-            <iframe class="embed-responsive-item" src="https://observatorionieves.users.earthengine.app/view/promedio-ndsi-mensual" allowfullscreen></iframe>
-        </div>
+
         </div>
       </div>
     </div>
@@ -130,10 +148,7 @@
   <section id="visualizador-4" class="p-3 team-obs">
     <div class="container ">
       <div class="row ">
-        <div class="col-3">
-          <img src="{% static "img/assets_maqueta/satelite_2.png" %}" alt="" class="img-fluid">
-        </div>
-        <div class="col-9">
+        <div class="col-6">
           <div class="col-12">
             <p class="font-weight-bold">
               <span class="txt-naranjo-2 ">VISUALIZADOR 4: Comparación interanual</span>
@@ -145,7 +160,18 @@
 Considere que para el análisis comparativo podrá obtener datos del sensor Terra a partir del año 2000. No obstante, para el sensor Aqua será a partir del año 2003.
 
             </p>
+            <p>
+              <a href="https://observatorionieves.users.earthengine.app/view/promedio-anual-ndsi" target="_blank" class="txt-naranjo-2 text-uppercase">
+                <i class="icofont-circled-right txt-naranjo-2"></i>
+                Ver visualizador
+              </a>
+            </p>
           </div>
+        </div>
+        <div class="col-6">
+          <a href="https://observatorionieves.users.earthengine.app/view/promedio-anual-ndsi" target="_blank">
+            <img src="{% static "img/visualizadores/visualizador_04.jpg" %}" alt="" class="img-fluid">
+          </a>
         </div>
       </div>
     </div>
@@ -155,9 +181,7 @@ Considere que para el análisis comparativo podrá obtener datos del sensor Terr
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <div class="embed-responsive embed-responsive-4by3">
-            <iframe class="embed-responsive-item" src="https://observatorionieves.users.earthengine.app/view/promedio-anual-ndsi" allowfullscreen></iframe>
-        </div>
+
         </div>
       </div>
     </div>
@@ -168,10 +192,12 @@ Considere que para el análisis comparativo podrá obtener datos del sensor Terr
   <section id="visualizador-5" class="p-3 team-obs">
     <div class="container ">
       <div class="row ">
-        <div class="col-3">
-          <img src="{% static "img/assets_maqueta/satelite_2.png" %}" alt="" class="img-fluid">
+        <div class="col-6">
+          <a href="https://observatorionieves.users.earthengine.app/view/downloaddata" target="_blank">
+            <img src="{% static "img/visualizadores/visualizador_05.jpg" %}" alt="" class="img-fluid">
+          </a>
         </div>
-        <div class="col-9">
+        <div class="col-6">
           <div class="col-12">
             <p class="font-weight-bold">
               <span class="txt-naranjo-2 ">VISUALIZADOR 5: Descargas</span>
@@ -180,6 +206,12 @@ Considere que para el análisis comparativo podrá obtener datos del sensor Terr
           <div class="col-12">
             <p class="text-justify">
               A partir de imágenes diarias del sensor satelital MODIS (MOD10A1) se determina la variabilidad espacio temporal de nieves sobre la sección media-superior de la cuenca del Río Aconcagua. Se presenta la información del valor promedio del Índice Normalizado de Nieve (NDSI), el promedio del área cubierta de nieve (SCA) considerando un NDSI>40 y el promedio de "no datos" producto de la presencia de nubes, ángulo de visión, saturación del sensor entre otros. El periodo de medición comprende desde el 2000-2020, entregando información a una escala anual y mensual. Puede personalizar su búsqueda seleccionando las sub-subcuencas de su área de interés.
+            </p>
+            <p>
+              <a href="https://observatorionieves.users.earthengine.app/view/downloaddata" target="_blank" class="txt-naranjo-2 text-uppercase">
+                <i class="icofont-circled-right txt-naranjo-2"></i>
+                Ver visualizador
+              </a>
             </p>
           </div>
         </div>
@@ -191,9 +223,7 @@ Considere que para el análisis comparativo podrá obtener datos del sensor Terr
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <div class="embed-responsive embed-responsive-4by3">
-            <iframe class="embed-responsive-item" src="https://observatorionieves.users.earthengine.app/view/downloaddata" allowfullscreen></iframe>
-        </div>
+
         </div>
       </div>
     </div>
