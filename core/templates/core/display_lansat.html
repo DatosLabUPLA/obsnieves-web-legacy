@@ -1,0 +1,107 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block title %}Visualizadores{% endblock title %}
+
+{% block content %}
+
+<section id="page-title">
+    <h2>Visualizadores - Lansat</h2>
+</section>
+
+<main id="main" class="p-3">
+
+  <div class="container">
+      <div class="row">
+          <i class="icofont-home"></i> Visualizadores / Lansat
+      </div>
+  </div>
+
+  <!-- Visualizador 1 -->
+  <section id="visualizador-1" class="p-3 team-obs">
+    <div class="container ">
+      <div class="row ">
+        <div class="col-6">
+          <a href="https://observatorionieves.users.earthengine.app/view/promedio-ndsi-mensual-landsat" target="_blank">
+            <img src="{% static "img/visualizadores/visualizador_lansat_01.jpg" %}" alt="" class="img-fluid">
+          </a>
+        </div>
+        <div class="col-6">
+          <div class="col-12">
+            <p class="font-weight-bold">
+              <span class="txt-naranjo-2 ">Comparación estacional</span>
+            </p>
+          </div>
+          <div class="col-12">
+            <p class="text-justify">
+              En base a imágenes satelitales fusionadas de Landsat 4, 5 , 7 y 8 se establece una comparación estacional entre los distintos meses del año sobre la cuenca del Río Aconcagua mediante un panel divisorio. La información es recopilada a partir de los valores del promedio mensual del Índice Normalizado de Nieve (NDSI). Esta interfaz de usuario le permite seleccionar los meses de interés a analizar, desplegando el panel divisorio donde se visualizará el resultado dentro del mapa.
+            </p>
+            <p>
+              <a href="https://observatorionieves.users.earthengine.app/view/promedio-ndsi-mensual-landsat" target="_blank" class="txt-naranjo-2 text-uppercase">
+                <i class="icofont-circled-right txt-naranjo-2"></i>
+                Ver visualizador
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section >
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Fin Visualizador 1 -->
+
+  <!-- Visualizador 2 -->
+  <section id="visualizador-2" class="p-3 team-obs">
+    <div class="container ">
+      <div class="row ">
+        <div class="col-5">
+          <div class="col-12">
+            <p class="font-weight-bold">
+              <span class="txt-naranjo-2 ">Comparación interanual</span>
+            </p>
+          </div>
+          <div class="col-12">
+            <p class="text-justify">
+              En base a imágenes satelitales fusionadas de Landsat 4, 5 , 7 y 8 se establece una comparación interanual entre los distintos años sobre la cuenca del Río Aconcagua mediante un panel divisorio. La información es recopilada a partir de los valores del promedio anual del Índice Normalizado de Nieve (NDSI). Esta interfaz de usuario le permite seleccionar los años de interés a analizar, desplegando el panel divisorio donde se visualizará el resultado dentro del mapa.
+            </p>
+            <p>
+              <a href="https://observatorionieves.users.earthengine.app/view/promedio-ndsi-anual-landsat" target="_blank" class="txt-naranjo-2 text-uppercase">
+                <i class="icofont-circled-right txt-naranjo-2"></i>
+                Ver visualizador
+              </a>
+            </p>
+          </div>
+        </div>
+        <div class="col-6">
+          <a href="https://observatorionieves.users.earthengine.app/view/promedio-ndsi-anual-landsat" target="_blank">
+            <img src="{% static "img/visualizadores/visualizador_lansat_02.jpg" %}" alt="" class="img-fluid">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Fin Visualizador 2 -->
+
+</main><!-- End #main -->
+
+{% endblock content %}

@@ -96,7 +96,9 @@
               <a href="#" class="{% if request.resolver_match.url_name == "home" %}text-white{% else %}txt-naranjo-2{% endif %}">Visualizadores</a>
                 <ul>
                     <li><a href="{% url 'display_description' %}">Visualizadores Descripción</a></li>
-                    <li><a href="{% url 'display' %}">Visualizadores 1 - 5</a></li>
+                    <li><a href="{% url 'display_lansat' %}">Visualizadores Lansat</a></li>
+                    <li><a href="{% url 'display_sentinel' %}">Visualizadores Sentinel</a></li>
+                    <li><a href="{% url 'display_modis' %}">Visualizadores MODIS</a></li>
                 </ul>
             </li>
 

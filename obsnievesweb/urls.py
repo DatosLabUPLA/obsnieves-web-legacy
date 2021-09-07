@@ -29,8 +29,10 @@ urlpatterns = [
     path('basededatos/', core_views.database, name='database'),
     path('escalamiento/', core_views.escalation, name='escalation'),
 
-    path('visualizadores/', core_views.display, name='display'),
-    path('visualizadores/descripcion', core_views.display_description, name='display_description'),
+    path('visualizadores/', core_views.display_description, name='display_description'),
+    path('visualizadores/lansat/', core_views.display_lansat, name='display_lansat'),
+    path('visualizadores/modis/', core_views.display_modis, name='display_modis'),
+    path('visualizadores/sentinel/', core_views.display_sentinel, name='display_sentinel'),
 
     path('noticias/', core_views.news, name='news'),
     path('eventos/', core_views.events, name='events'),
