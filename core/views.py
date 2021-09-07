@@ -21,8 +21,15 @@ def escalation(request):
 def display_description(request):
     return render(request, 'core/display_description.html')
 
-def display(request):
-    return render(request, 'core/display.html')
+def display_lansat(request):
+    return render(request, 'core/display_lansat.html')
+
+def display_modis(request):
+    return render(request, 'core/display_modis.html')
+
+def display_sentinel(request):
+    return render(request, 'core/display_sentinel.html')
+
 
 def news(request):
     return render(request, 'core/news.html')
