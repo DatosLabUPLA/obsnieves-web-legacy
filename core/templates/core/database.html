@@ -95,6 +95,59 @@
     </div>
   </section>
 
+  <section class="p-3">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <table class="table table-striped">
+            <thead class="text-uppercase txt-naranjo-2">
+                <tr>
+                    <th>Características</th>
+                    <th>BD1</th>
+                    <td>BD2</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Disponibilidad de datos (años)</td>
+                    <td>2000 - a la fecha</td>
+                    <td>1988 - a la fecha</td>
+                </tr>
+                <tr>
+                    <td>Resolución espacial</td>
+                    <td>500 m</td>
+                    <td>10 m - 30 m</td>
+                </tr>
+                <tr>
+                    <td>Resolución temporal (cadencia)</td>
+                    <td>diario</td>
+                    <td>6 días - 16 días</td>
+                </tr>
+                <tr>
+                    <td>Programa satelital utilizado</td>
+                    <td>MODIS</td>
+                    <td>Landsat y Sentinel</td>
+                </tr>
+                <tr>
+                    <td>Tipo de producto obtenido</td>
+                    <td>Producto mejorado reducción de nubes</td>
+                    <td>Producto fusionado</td>
+                </tr>
+            </tbody>
+          </table>
+
+          <p class="text-justify">Las bases de datos de imágenes resultantes del proyecto estarán disponibles para su visualización o descarga  a través de la sección de visualizadores</p>
+          <p>
+              <a href="{% url 'display_description' %}" target="_self" class="text-uppercase">
+                <i class="icofont-circled-right txt-naranjo-2"></i>
+                Visualizadores
+              </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
 </main><!-- End #main -->
 
 {% endblock content %}

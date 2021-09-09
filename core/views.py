@@ -31,9 +31,6 @@ def display_sentinel(request):
     return render(request, 'core/display_sentinel.html')
 
 
-def news(request):
-    return render(request, 'core/news.html')
-
 def events(request):
     return render(request, 'core/events.html')
 
