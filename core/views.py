@@ -21,8 +21,8 @@ def escalation(request):
 def display_description(request):
     return render(request, 'core/display_description.html')
 
-def display_lansat(request):
-    return render(request, 'core/display_lansat.html')
+def display_landsat(request):
+    return render(request, 'core/display_landsat.html')
 
 def display_modis(request):
     return render(request, 'core/display_modis.html')
