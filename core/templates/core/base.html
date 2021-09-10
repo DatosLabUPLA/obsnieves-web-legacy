@@ -69,7 +69,7 @@
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top header-transparent">
+  <header id="header" class="fixed-top header-transparent {% if request.resolver_match.url_name == "home" %}header-scrolled-alt{% endif %}">
     <div class="container d-flex align-items-center">
 
       <div class="logo mr-auto">
