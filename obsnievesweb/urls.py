@@ -34,7 +34,7 @@ urlpatterns = [
     path('escalamiento/', core_views.escalation, name='escalation'),
 
     path('visualizadores/', core_views.display_description, name='display_description'),
-    path('visualizadores/lansat/', core_views.display_lansat, name='display_lansat'),
+    path('visualizadores/landsat/', core_views.display_landsat, name='display_landsat'),
     path('visualizadores/modis/', core_views.display_modis, name='display_modis'),
     path('visualizadores/sentinel/', core_views.display_sentinel, name='display_sentinel'),
 

@@ -12,7 +12,7 @@ class New(models.Model):
     ]
 
     headline = models.CharField(max_length=200, verbose_name='Título')
-    slug = models.SlugField(unique=True, default='', verbose_name='Slug')
+    slug = models.SlugField(unique=True, max_length=255, default='', verbose_name='Slug')
     lead = models.TextField(max_length=500, verbose_name='Bajada')
     body = RichTextUploadingField(blank=True, verbose_name='Cuerpo')
     link_source = models.URLField(max_length=500, verbose_name='URL de la fuente')
