@@ -54,7 +54,7 @@
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top header-transparent">
+  <header id="header" class="fixed-top header-transparent {% if request.resolver_match.url_name == "home" %}header-scrolled-alt{% endif %}">
     <div class="container d-flex align-items-center">
 
       <div class="logo mr-auto">
@@ -213,6 +213,9 @@
   <script src="{% static 'vendor/venobox/venobox.min.js' %}"></script>
   <script src="{% static 'vendor/owl.carousel/owl.carousel.min.js' %}"></script>
   <script src="{% static 'vendor/aos/aos.js' %}"></script>
+
+  <!-- Javascript Image Zoom On Click -->
+  <script src="{% static 'js/zooming.min.js' %}"></script>
 
   <!-- Template Main JS File -->
   <script src="{% static 'js/main.js' %}"></script>
