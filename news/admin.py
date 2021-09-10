@@ -5,7 +5,7 @@ from .models import New, Origin
 class NewAdmin(admin.ModelAdmin):
     readonly_fields = ('created', 'updated')
     list_display = ('headline', 'date', 'id_origin')
-    prepopulated_fields = {"slug": ("headline",)}
+    prepopulated_fields = {"slug": ("headline", "date")}
     list_filter = ('id_origin__name', 'date')
     search_fields = ('headline', 'date', 'id_origin__name', 'id_origin__short_name')
     ordering = ('-date', 'headline')
