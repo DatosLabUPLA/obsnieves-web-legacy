@@ -56,7 +56,8 @@
           <div class="col-10">
             <div class="col-12">
               <p class="text-uppercase font-weight-bold">
-                <span class="txt-azul-2">{{ member.name }}</span> -  <span class="">{{ member.name_position_alt }}</span>
+                <span class="txt-azul-2">{{ member.name }}</span> {% if member.name_position_alt %}-  <span class="">{{ member.name_position_alt }}</span>{% endif %}
+                
               </p>
             </div>
             <div class="col-12">
