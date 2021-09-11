@@ -1,11 +1,25 @@
 from django.shortcuts import render
+from .models import Team, Position
 
 # Create your views here.
 def home(request):
     return render(request, 'core/home.html')
 
 def team(request):
-    return render(request, 'core/team.html')
+    team = Team.objects.all()
+    positions = Position.objects.order_by('index')
+
+    team_members = []
+    for position in positions:
+        team_members.append({
+            'position': position.name,
+            'members': team.filter(id_position=position.id).order_by('index'),
+        })
+
+    context = {
+        'teams':team_members,
+    }
+    return render(request, 'core/team.html', context)
 
 def team_lab(request):
     return render(request, 'core/team_lab.html')
