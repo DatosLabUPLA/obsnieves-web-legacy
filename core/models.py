@@ -4,6 +4,7 @@ from django.db import models
 class Team(models.Model):
     name = models.CharField(max_length=200, verbose_name='Nombre')
     id_position = models.ForeignKey('Position', default=None, on_delete=models.PROTECT, verbose_name='Cargo')
+    name_position_alt = models.CharField(null=True, blank=True, max_length=200, verbose_name='Nombre del Cargo')
     email = models.EmailField(null=True, blank=True, verbose_name='Email')
     description = models.TextField(verbose_name="Descripción")
     image = models.ImageField(null=True, blank=True, upload_to='images/team/', verbose_name='Imagen')
