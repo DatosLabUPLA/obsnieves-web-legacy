@@ -46,8 +46,8 @@ class Origin(models.Model):
     updated = models.DateTimeField(auto_now=True, verbose_name='modificado')
 
     class Meta:
-        verbose_name = 'origen'
-        verbose_name_plural = 'origenes'
+        verbose_name = 'fuente'
+        verbose_name_plural = 'fuentes'
         ordering = ['-name']
     
     def __str__(self):
