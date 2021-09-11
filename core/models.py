@@ -24,6 +24,7 @@ class Team(models.Model):
 class Position(models.Model):
     name = models.CharField(max_length=200, verbose_name='Nombre del cargo')
     description = models.CharField(null=True, blank=True, max_length=200, verbose_name='Descripción')
+    index = models.PositiveSmallIntegerField(default=0, verbose_name='Indice', help_text="Este campo se utiliza para dar orden de preferencia de aparición. Evitar modificar.")
 
     created = models.DateTimeField(auto_now_add=True, verbose_name='creado')
     updated = models.DateTimeField(auto_now=True, verbose_name='modificado')
