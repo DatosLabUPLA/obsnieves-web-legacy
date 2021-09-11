@@ -4,5 +4,13 @@
 //   <img id="img-default" src="img/journey_start_thumbnail.jpg" data-action="zoom" data-original="img/journey_start.jpg"
 //     alt="journey_start_thumbnail" />
 // </div>
-new Zooming().listen('img')
+
+// Listen to images after DOM content is fully loaded
+document.addEventListener('DOMContentLoaded', function () {
+    new Zooming({
+      // options...
+      customSize: '50%',
+      bgOpacity: 0.5,
+    }).listen('.img-zoomable')
+  })
 
