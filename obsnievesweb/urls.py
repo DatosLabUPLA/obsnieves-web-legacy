@@ -48,11 +48,13 @@ urlpatterns = [
     path('prueba/', core_views.events, name='events'),
 
     path('ckeditor/', include('ckeditor_uploader.urls')),
-]
+
+    
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 handler404 = core_views.error_404
 handler500 = core_views.error_500
 
-if settings.DEBUG:
-    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+# if settings.DEBUG:
+#     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
