@@ -41,7 +41,7 @@
               <p class="card-text text-justify">{{ n.lead|truncatechars:260 }}</p>
             </div>
             <div class="card-footer">
-              <small class="text-muted">{{ n.date }}</small>
+              <small class="text-muted">{{ n.date|date:"d F Y" }}</small>
               <div class="btn-group float-right" role="group">
                 <a href="{{ n.link_source }}" class="btn btn-dark" target="_blank">Ir a fuente</a>
                 <a href="{% url 'detail_new' n.id %}" class="btn btn-info" target="_self">Ver</a>
