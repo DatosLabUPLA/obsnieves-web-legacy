@@ -48,6 +48,9 @@ urlpatterns = [
     path('prueba/', core_views.events, name='events'),
 
     path('ckeditor/', include('ckeditor_uploader.urls')),
+
+    path('map_1', core_views.map_1, name='map_1'),
+    path('map_2', core_views.map_2, name='map_2'),
     
 ]
 
