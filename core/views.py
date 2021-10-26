@@ -56,3 +56,8 @@ def error_500(request):
     data = {}
     return render(request,'core/error_500.html', data)
 
+def map_1(request):
+    return render(request, 'core/map_1.html')
+
+def map_2(request):
+    return render(request, 'core/map_2.html')
