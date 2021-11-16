@@ -157,3 +157,9 @@ def landsat_2019(request):
 
 def landsat_2020(request):
     return render(request, 'maps/landsat/2020_Landsat.html')
+
+def map_split(request):
+    return render(request, 'maps/test/split.html')
+
+def map_my_map(request):
+    return render(request, 'maps/test/my_map.html')

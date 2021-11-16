@@ -84,8 +84,9 @@ urlpatterns = [
     path('landsat_2018', core_views.landsat_2018, name='landsat_2018'),
     path('landsat_2019', core_views.landsat_2019, name='landsat_2019'),
     path('landsat_2020', core_views.landsat_2020, name='landsat_2020'),
-    
-    
+
+    path('map/split', core_views.map_split, name='map_split'),
+    path('map/my_map', core_views.map_my_map, name='map_my_map'),
 ]
 
 handler404 = core_views.error_404
