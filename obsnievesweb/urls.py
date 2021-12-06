@@ -45,7 +45,7 @@ urlpatterns = [
     path('eventos/', core_views.events, name='events'),
 
     # Modificar para las pruebas del código generado
-    path('prueba/', core_views.events, name='events'),
+    # path('prueba/', core_views.events, name='events'),
 
     path('ckeditor/', include('ckeditor_uploader.urls')),
 
