@@ -1,3 +1,6 @@
+# Mapas generados por el servidor
+media/maps/*.html
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
