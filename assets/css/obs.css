@@ -237,3 +237,8 @@ section .short{
 .mobile-nav-active .mobile-nav a{
 	color: #CF653D !important;
 }
+
+#header {
+	margin-top: 60px; /* Ajustá este valor si el banner cambia de tamaño */
+  }
+  
